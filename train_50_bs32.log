@@ -1,0 +1,49 @@
+F0610 21:24:57.310675  4918 io.cpp:36] Check failed: fd != -1 (-1 vs. -1) File not found: ./solver_50_4nodes.prototxt
+F0610 21:24:57.312258 18848 io.cpp:36] Check failed: fd != -1 (-1 vs. -1) File not found: ./solver_50_4nodes.prototxt
+F0610 21:24:57.313150  6626 io.cpp:36] Check failed: fd != -1 (-1 vs. -1) File not found: ./solver_50_4nodes.prototxt
+F0610 21:24:57.315073 22354 io.cpp:36] Check failed: fd != -1 (-1 vs. -1) File not found: ./solver_50_4nodes.prototxt
+*** Check failure stack trace: ***
+*** Check failure stack trace: ***
+    @     0x2b5f74f3eb5d  google::LogMessage::Fail()
+    @     0x2b1174824b5d  google::LogMessage::Fail()
+    @     0x2b5f74f42b77  google::LogMessage::SendToLog()
+    @     0x2b1174828b77  google::LogMessage::SendToLog()
+*** Check failure stack trace: ***
+    @     0x2b5f74f409f9  google::LogMessage::Flush()
+    @     0x2b11748269f9  google::LogMessage::Flush()
+*** Check failure stack trace: ***
+    @     0x2af2296e2b5d  google::LogMessage::Fail()
+    @     0x2b5f74f40cfd  google::LogMessageFatal::~LogMessageFatal()
+    @     0x2b1174826cfd  google::LogMessageFatal::~LogMessageFatal()
+    @     0x2b0ff508ab5d  google::LogMessage::Fail()
+    @     0x2af2296e6b77  google::LogMessage::SendToLog()
+    @     0x2b0ff508eb77  google::LogMessage::SendToLog()
+    @     0x2af2296e49f9  google::LogMessage::Flush()
+    @     0x2b0ff508c9f9  google::LogMessage::Flush()
+    @     0x2af2296e4cfd  google::LogMessageFatal::~LogMessageFatal()
+    @     0x2b0ff508ccfd  google::LogMessageFatal::~LogMessageFatal()
+    @     0x2b11744eb633  caffe::ReadProtoFromTextFile()
+    @     0x2b5f74c05633  caffe::ReadProtoFromTextFile()
+    @     0x2b0ff4d51633  caffe::ReadProtoFromTextFile()
+    @     0x2af2293a9633  caffe::ReadProtoFromTextFile()
+    @     0x2b11744a6f19  caffe::ReadSolverParamsFromTextFileOrDie()
+    @           0x40a041  train()
+    @     0x2b5f74bc0f19  caffe::ReadSolverParamsFromTextFileOrDie()
+    @           0x409258  main
+    @       0x3921a1ed1d  (unknown)
+    @           0x40a041  train()
+    @     0x2b0ff4d0cf19  caffe::ReadSolverParamsFromTextFileOrDie()
+    @           0x408da9  (unknown)
+    @           0x409258  main
+    @       0x3921a1ed1d  (unknown)
+    @           0x40a041  train()
+    @           0x408da9  (unknown)
+    @           0x409258  main
+    @     0x2af229364f19  caffe::ReadSolverParamsFromTextFileOrDie()
+    @       0x3921a1ed1d  (unknown)
+    @           0x40a041  train()
+    @           0x408da9  (unknown)
+    @           0x409258  main
+    @       0x3921a1ed1d  (unknown)
+    @           0x408da9  (unknown)
+yhrun: error: cn11984: task 1: Aborted
